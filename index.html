@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.todobarato.com</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="ofertas-styled-marquee">
+        <marquee><h1 class="ofertas-styled-text">¡Ofertas increíbles te esperan!
+ Descubre descuentos irresistibles en nuestra tienda virtual. ¡Explora ahora y ahorra! 🛒✨</h1>
+    </div></marquee>
+
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <header class="header" style="background-image: 
+    url('imagenes/panel.webp'); background-size: cover; background-position: center;">
+        <div class="menu container">
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Categorías</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#ropa-hombre">Hombre</a></li>
+                            <li><a href="#ropa-mujer">Mujer</a></li>
+                            <li><a href="#electronica">Electronica</a></li>
+                            <li><a href="#vehiculos">Vehículos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/nosotros">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="menu-actions">
+                <div aria-label="User Login Button" tabindex="0" role="button" class="user-profile">
+                    <div class="user-profile-inner">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path
+                                d="m15.626 11.769a6 6 0 1 0 -7.252 0 9.008 9.008 0 0 0 -5.374 8.231 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 9.008 9.008 0 0 0 -5.374-8.231zm-7.626-4.769a4 4 0 1 1 4 4 4 4 0 0 1 -4-4zm10 14h-12a1 1 0 0 1 -1-1 7 7 0 0 1 14 0 1 1 0 0 1 -1 1z"
+                            ></path>
+                        </svg>
+                        <p>Iniciar Sesion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-content container">
+            <div class="bienvenida-box">
+                <span class="bienvenida-titulo">¡Bienvenido a nuestra tienda!</span>
+                <h1>90% EN OFERTAS</h1>
+                <p>
+                    Encuentra todo lo que buscas en nuestra tienda y disfruta de la facilidad de comprar en línea.
+                    Descubre nuestras últimas ofertas y mantente al día con nuestras novedades.
+                </p>
+                <div class="butons">
+                    <a href="/leer-mas" class="btn-1">Leer más</a>
+                    <a href="/comprar-ahora" class="btn-1">COMPRAR YA</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="video-banner">
+        <video 
+          src="videos/video1.mp4" 
+          autoplay 
+          controls
+          loop 
+          playsinline 
+          poster="imagenes/poster-video.jpg"
+        ></video>
+      </section>
+
+    <section class="oferts container">
+        <div class="oferta-1 b1">
+           
+            <div class="ofert-img">
+                <img src="imagenes/carrusel1.jpg" alt="imagen de casaca en oferta" />
+            </div>
+        </div>
+
+        <div class="oferta-1 b2">
+            
+            <div class="ofert-img">
+                <img src="imagenes/carrusel2.jpg" alt="imagen de ropa de mujer en oferta" />
+            </div>
+        </div>
+
+        <div class="oferta-1 b3">
+            
+            <div class="ofert-img">
+                <img src="imagenes/carrusel3.jpg" alt="imagen de zapatillas en oferta" />
+            </div>
+        </div>
+
+        <div class="oferta-1 b4">
+            
+            <div class="ofert-img">
+                <img src="imagenes/carrusel4.webp" alt="imagen de ropa de mujer en oferta" />
+            </div>
+        </div>
+        <div class="oferta-1 b4">
+            
+            <div class="ofert-img">
+                <img src="imagenes/carrusel5.jpg" alt="imagen de ropa de mujer en oferta" />
+            </div>
+        </div>
+    </section>
+
+    <main class="products-container ">
+        <h2>Productos Destacados</h2>
+<section class="productos-destacados-collage">
+  <div class="collage-container">
+    <img src="imagenes/coll1.jpeg" alt="Imagen 1">
+    <img src="imagenes/coll2.jpg" alt="Imagen 2">
+    <img src="imagenes/coll3.webp" alt="Imagen 3">
+    <img src="imagenes/coll4.webp" alt="Imagen 4">
+    <img src="imagenes/coll5.jpg" alt="Imagen 5">
+    <img src="imagenes/coll6.webp" alt="Imagen 6">
+    </div>
+</section>
+
+        <h2>Categorías</h2>
+        <section class="categoria-productos" id="ropa-hombre">
+            <h3>Ropa Hombre</h3>
+            <div class="product-grid ropa-hombre-grid">
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah1.avif" alt="Casaca">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="1">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah2.webp" alt="Casaca Cuero">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca Cuero</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="2">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah3.jpg" alt="Casaca">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="3">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/coll4.webp" alt="Casaca Cuero">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca Cuero</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="4">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/coll5.jpg" alt="Casaca Cuero">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca Cuero</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="5">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah6.jpg" alt="Pantalon Cargo">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Pantalon Cargo</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="6">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah7.jpg" alt="Pantalon Cargo">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Pantalon Cargo</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="7">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah8.jpg" alt="Pantalon Cargo">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Pantalon Cargo</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="8">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah9.jpg" alt="Casaca">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Casaca</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="9">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah10.jpg_large" alt="Polera">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Polera</h3>
+                        <p class="precio">130 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="10">Ver Producto</a>
+                    </div>
+                </div>
+            </div>
+            <button class="ver-mas" data-categoria="ropa-hombre">Ver más productos de Hombre</button>
+        </section>
+
+        <section class="categoria-productos" id="ropa-mujer">
+            <h3>Ropa de Mujer</h3>
+            <div class="product-grid ropa-mujer-grid">
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam1.webp" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="11">Ver Producto</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam2.jpg" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="12">Ver Producto</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam3.jpg" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="13">Ver Producto</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam4.jpg" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="14">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam5.webp" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="15">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam6.webp" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="16">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropah7.jpg" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="17">Ver Producto</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam8.webp" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="18">Ver Producto</a>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam9.webp" alt="Blusa de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="19">Ver Producto</a>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-img-container">
+                        <img src="imagenes/ropam10.jpg" alt=" de mujer">
+                    </div>
+                    <div class="products-txt">
+                        <h3>Blusa</h3>
+                        <p class="precio">95 S:/</p>
+                        <a href="#" class="agregar-carrito btn-3 button type1" data-id ="20">Ver Producto</a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="ver-mas" data-categoria="ropa-mujer">Ver más productos de Mujer</button>
+        </section>
+    </main>
+</body>
+</html>
